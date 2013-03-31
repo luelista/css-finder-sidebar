@@ -1,0 +1,27 @@
+/*finder-sidebar.css*/
+
+.finder-sidebar {
+  position: fixed; top: 0; left: 0; width: 200px; height :100%;
+  font-family: "Helvetica", "Trebuchet MS", "Arial", "Verdana", "sans-serif";
+  padding: 0 0; overflow-x: hidden; overflow-y: auto;
+  background-image: linear-gradient(bottom, rgb(209,216,223) 0%, rgb(232,236,240) 100%);
+  background-image: -o-linear-gradient(bottom, rgb(209,216,223) 0%, rgb(232,236,240) 100%);
+  background-image: -moz-linear-gradient(bottom, rgb(209,216,223) 0%, rgb(232,236,240) 100%);
+  background-image: -webkit-linear-gradient(bottom, rgb(209,216,223) 0%, rgb(232,236,240) 100%);
+  background-image: -ms-linear-gradient(bottom, rgb(209,216,223) 0%, rgb(232,236,240) 100%);
+  background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0, rgb(209,216,223)),color-stop(1, rgb(232,236,240)));
+  border-right: 1px solid #b8b8b8;
+}
+.finder-sidebar h2 { color: #868b91; text-transform: uppercase; font-size: 11px; margin: 0; padding: 6px 6px 3px; text-shadow: 1px 1px 0 #fff ;}
+.finder-sidebar h2 input { color: #97a5b1; font-size: 10px; font-weight: bold; background:transparent; border:0; float:right; padding:0 0 0 5px;  text-shadow: 1px 1px 0 #fff ;}
+.finder-sidebar h2 input:active { color: #5a7fe8 }
+.finder-sidebar ul { margin: 0; padding: 0 0 7px; }
+.finder-sidebar ul li { cursor: pointer; list-style-type: none; margin: 0; padding: 5px 0 5px 10px; color: #333; font-size: 12px; }
+.finder-sidebar ul .cur { color: white;font-weight:bold; border-top: 1px solid #68a2de; border-bottom: 1px solid #68a2de; padding: 4px 0 4px 10px; 
+  background-image: linear-gradient(bottom, rgb(46,136,205) 0%, rgb(108,185,230) 100%);
+  background-image: -o-linear-gradient(bottom, rgb(46,136,205) 0%, rgb(108,185,230) 100%);
+  background-image: -moz-linear-gradient(bottom, rgb(46,136,205) 0%, rgb(108,185,230) 100%);
+  background-image: -webkit-linear-gradient(bottom, rgb(46,136,205) 0%, rgb(108,185,230) 100%);
+  background-image: -ms-linear-gradient(bottom, rgb(46,136,205) 0%, rgb(108,185,230) 100%);
+  background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0, rgb(46,136,205)),color-stop(1, rgb(108,185,230)));
+}

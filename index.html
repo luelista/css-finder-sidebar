@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="finder-sidebar.css" />
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script>
+$(function() {
+    $(".finder-sidebar li").click(function() {
+        $(".finder-sidebar li.cur").removeClass("cur"); $(this).addClass("cur");
+    });
+});
+</script>
+</head>
+<body>
+  <div id="sidebar" class="finder-sidebar">
+    <h2>Bookmarks <input type="button" value="Refresh"></h2>
+    <ul id="mainmenu">
+    <li class="cur">Home</li>
+    <li>Code</li>
+    <li>License</li>
+    </ul>
+
+
+    <h2>Network
+    <input type="button" value="Connect">
+    <input type="button" value="Upload"></h2>
+    <ul>
+    <li>alpha</li>
+    <li>beta</li>
+    <li>gamma</li>
+    </ul>
+    
+    <h2>Example 
+    <input type="button" onclick="$('#sidebar_toggle1').slideToggle();if(this.value=='Show')this.value='Hide';else this.value='Show';" value="Hide"></h2>
+
+    <ul id="sidebar_toggle1">
+    <li>alpha</li>
+    <li>beta</li>
+    <li>gamma</li>
+    <li>delta</li>
+    <li>epsilon</li>
+    </ul>
+
+    <h2>Default hidden
+    <input type="button" onclick="$('#sidebar_toggle2').slideToggle();if(this.value=='Show')this.value='Hide';else this.value='Show';" value="Show"></h2>
+
+    <ul id="sidebar_toggle2" style='display:none'>
+    <li data-file="themedir/conf.ini">conf.ini</li>
+    <li data-file="docs/macros.js">macros.js</li>
+    <li data-file="docs/wiki.js">wiki.js</li>
+    </ul>
+  </div>
+</body>
+</html>
